@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Updated for better support of modern JavaScript features
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "resolveJsonModule": true, // Allows importing JSON files
+    "moduleResolution": "node", // Ensures compatibility with Node.js module resolution
+    "typeRoots": ["./node_modules/@types"] // Explicitly specify type definitions
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts", "dist"]
+}
